@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>number<span>guesser</span></header>
+        <div id="colored-bkgrd">
+            <h3 id="change-text">Can you guess the AI's number?<br>*it is a number between 1 - 100</h3>
+            <h4 id="headers">Are you hot or cold?</h4>
+            <img id="header-img" src="img/img-1-01.png">
+            <div id="center">
+                <input id="input" type="text" placeholder="Enter your guess..." autofocus>
+                <button id="guessbtn">Guess</button>
+                <button id="reset">Reset</button>
+                <button id="hintbtn">Hint</button>
+            </div>
+            <h3 id="guess-number">Remaining guesses: 5</h3>
+            <div id='guesses'>
+                <!-- unordered list of guesses -->
+                <ul>
+                  <li class="guess">-</li>
+                  <li class="guess">-</li>
+                  <li class="guess">-</li>
+                  <li class="guess">-</li>
+                  <li class="guess">-</li>
+                </ul>
+              </div>
+        </div>
+        <footer id="footer">
+            <img id="left" src="img/fa.png">
+            <img id="right" src="img/gh.png">
+            
+            <a target="_" href="https://github.com/cfilipek"><h3 class="center">
+                Claire Filipek
+                <i class="fab fa-github"></i>
+            </h3></a>
+          </footer>
+    </div>
+
+
+
+<script src="https://kit.fontawesome.com/48c5451378.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src='js/guessing-game.js'></script>
+
+</body>
+</html>
