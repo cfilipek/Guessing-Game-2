@@ -189,7 +189,7 @@ var generateWinningNumber = function() {
       $(".guess")
         .text("-");
       $("#header-img")
-          .attr("src","img-1-01.png");
+          .attr("src","img/img-1-01.png");
         $("#colored-bkgrd")
           .css({
             "backgroundColor" : "#fed3cb"
