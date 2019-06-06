@@ -58,6 +58,8 @@ var generateWinningNumber = function() {
         + "It only took you " + (this.pastGuesses.length + 1) + " guesses.");
       $("#header-img")
       .attr("src","img/winner-06.png");
+      $("#guess-number")
+          .html("Remaining guesses: " + (4 - this.pastGuesses.length));
       $("#colored-bkgrd")
       .css({
         "backgroundColor" : "#badedb"
