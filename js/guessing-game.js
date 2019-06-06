@@ -53,9 +53,6 @@ var generateWinningNumber = function() {
   Game.prototype.checkGuess = function() {
     if (this.playersGuess === this.winningNumber) {
       $("#hhintbtn, #guessbtn").prop("disabled", true);
-      $("#change-text")
-        .html("Yes, it's " + this.winningNumber + "!" + "<br>" 
-        + "It only took you " + (this.pastGuesses.length + 1) + " guesses.");
       $("#header-img")
       .attr("src","img/winner-06.png");
       $("#guess-number")
@@ -70,6 +67,15 @@ var generateWinningNumber = function() {
           .css({
             "background-color": "white"
           });
+      if(this.pastGuesses.length === 1){
+        $("#change-text")
+        .html("Yes, it's " + this.winningNumber + "!" + "<br>" 
+        + "It only took you " + (this.pastGuesses.length) + " guess.");
+      } else {
+        $("#change-text")
+        .html("Yes, it's " + this.winningNumber + "!" + "<br>" 
+        + "It only took you " + (this.pastGuesses.length) + " guesses.");
+      }
         
       return "You Win!";
     } else {
