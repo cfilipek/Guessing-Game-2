@@ -64,6 +64,12 @@ var generateWinningNumber = function() {
       .css({
         "backgroundColor" : "#badedb"
       });
+      this.pastGuesses.push(this.playersGuess);
+        $("#guesses li:nth-child(" + this.pastGuesses.length + ")")
+          .text(this.playersGuess)
+          .css({
+            "background-color": "white"
+          });
         
       return "You Win!";
     } else {
