@@ -3,5 +3,5 @@ A number guessing game (between 0-100) created with HTML, CSS, and JS. V2 with a
 Created during the foundations portion of Fullstack Academy's program.
 
 <p align="center">
-  <img src="https://i.imgur.com/LdPQFWk.png" width="600" alt="Guessing Game Image">
+  <img src="https://i.imgur.com/tn1Kj07.png" width="600" alt="Guessing Game Image">
 </p>
