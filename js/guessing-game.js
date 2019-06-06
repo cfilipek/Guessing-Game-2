@@ -55,7 +55,7 @@ var generateWinningNumber = function() {
       $("#hhintbtn, #guessbtn").prop("disabled", true);
       $("#change-text")
         .html("Yes, it's " + this.winningNumber + "!" + "<br>" 
-        + "It only took you " + this.pastGuesses.length + " guesses.");
+        + "It only took you " + (this.pastGuesses.length + 1) + " guesses.");
       $("#header-img")
       .attr("src","img/winner-06.png");
       $("#colored-bkgrd")
@@ -88,6 +88,8 @@ var generateWinningNumber = function() {
             .html(`No more guesses left!<br>The number was: ${this.winningNumber}`);
           $("#header-img")
             .attr("src","img/img-1-01.png");
+          $("#guess-number")
+            .html("Remaining guesses: " + 0);
           $("#colored-bkgrd")
              .css({
              "backgroundColor" : "#fed3cb"
@@ -100,6 +102,8 @@ var generateWinningNumber = function() {
                 .html("Guess a higher number! <br> *it is a number between 1 - 100");
             $("#header-img")
           .attr("src","img/high-06.png");
+          $("#guess-number")
+            .html("Remaining guesses: " + (5 - this.pastGuesses.length));
             $("#colored-bkgrd")
           .css({
             "backgroundColor" : "#badedb"
@@ -109,6 +113,8 @@ var generateWinningNumber = function() {
                 .html("Guess a lower number! <br> *it is a number between 1 - 100");
             $("#header-img")
             .attr("src","img/low-05.png");
+            $("#guess-number")
+            .html("Remaining guesses: " + (5 - this.pastGuesses.length));
              $("#colored-bkgrd")
             .css({
             "backgroundColor" : "#eae8ca"});
@@ -164,10 +170,12 @@ var generateWinningNumber = function() {
       // $("#subtitle").text("Guess a number between 1-100!");
       $("#headers")
         .text("Are you hot or cold?");
+      $("#guess-number")
+        .html("Remaining guesses: " + 5 );
       $(".guess")
         .text("-");
       $("#header-img")
-          .attr("src","img/img-1-01.png");
+          .attr("src","img-1-01.png");
         $("#colored-bkgrd")
           .css({
             "backgroundColor" : "#fed3cb"
