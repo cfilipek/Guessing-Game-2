@@ -57,7 +57,7 @@ var generateWinningNumber = function() {
         .html("Yes, it's " + this.winningNumber + "!" + "<br>" 
         + "It only took you " + this.pastGuesses.length + " guesses.");
       $("#header-img")
-      .attr("src","../img/winner-06.png");
+      .attr("src","img/winner-06.png");
       $("#colored-bkgrd")
       .css({
         "backgroundColor" : "#badedb"
@@ -69,7 +69,7 @@ var generateWinningNumber = function() {
         $("#change-text")
           .html("You have already guessed that number. <br> *it is a number between 1 - 100");
         $("header-img")
-          .attr("src","../img/img-1-01.png");
+          .attr("src","img/img-1-01.png");
         $("colored-bkgrd")
           .css({
             "backgroundColor" : "#fed3cb"
@@ -99,7 +99,7 @@ var generateWinningNumber = function() {
             $("#change-text")
                 .html("Guess a higher number! <br> *it is a number between 1 - 100");
             $("#header-img")
-          .attr("src","../img/high-06.png");
+          .attr("src","img/high-06.png");
             $("#colored-bkgrd")
           .css({
             "backgroundColor" : "#badedb"
@@ -108,7 +108,7 @@ var generateWinningNumber = function() {
             $("#change-text")
                 .html("Guess a lower number! <br> *it is a number between 1 - 100");
             $("#header-img")
-            .attr("src","../img/low-05.png");
+            .attr("src","img/low-05.png");
              $("#colored-bkgrd")
             .css({
             "backgroundColor" : "#eae8ca"});
