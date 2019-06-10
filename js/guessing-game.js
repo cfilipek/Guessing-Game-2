@@ -97,7 +97,7 @@ var generateWinningNumber = function() {
             "background-color": "white"
           });
         if (this.pastGuesses.length === 5) {
-          $("#hhintbtn, #guessbtn").prop("disabled", true);
+          $("#hintbtn, #guessbtn").prop("disabled", true);
           $("#change-text")
             .html(`No more guesses left!<br>The number was: ${this.winningNumber}`);
           $("#header-img")
